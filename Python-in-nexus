@@ -1,0 +1,14 @@
+from cli import *
+cmd1= 'show ip int brief | json-pretty'
+output1= cli(cmd1)
+print(output1)
+
+
+*************************************************
+
+from cli import *
+import json
+cmd1= 'show ip int brief | json-pretty'
+json_data=cli(cmd1)
+json_final=json.loads(json_data)
+print(json_final['TABLE_intf']['ROW_intf']['prefix'])
