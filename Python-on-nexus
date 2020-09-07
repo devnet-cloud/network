@@ -1,0 +1,28 @@
+Software
+  BIOS: version 05.38
+  NXOS: version 7.0(3)I7(7)
+
+Hardware
+  cisco Nexus9000 C9348GC-FXP Chassis
+  Intel(R) Xeon(R) CPU D-1526 @ 1.80GHz with 24571772 kB of memory.
+  Processor Board ID FDO232513SG
+
+**************************************************
+Show ip int brief 
+**************************************************
+
+from cli import *
+cmd1= 'show ip int brief | json-pretty'
+output1= cli(cmd1)
+print(output1)
+
+*************************************************
+Show ip int brief /prefix
+*************************************************
+
+from cli import *
+import json
+cmd1= 'show ip int brief | json-pretty'
+json_data=cli(cmd1)
+json_final=json.loads(json_data)
+print(json_final['TABLE_intf']['ROW_intf']['prefix'])
