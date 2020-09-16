@@ -1,10 +1,24 @@
-Access Different APIs firts
+Access Different APIs first: 
 
 REST APIs –requests
-•pip install requestsimport requests 
+•pip install requests import requests 
 
 NETCONF –ncclient 
-•pip install ncclientimport ncclient
+•pip install ncclient import ncclient
+Documentation: https://ncclient.readthedocs.io/en/latest/
+
+XML -xmltodict
+•pip install xmltodict import xmltodict
+Note: Treat XML like Python Dictionaries with xmltodict
 
 Network CLI –netmiko 
-•pip install netmikoimport netmiko
+•pip install netmiko import netmiko
+
+JSON
+•import json
+
+YAML -PyYAML
+•pip install PyYAML import yaml
+
+CSV
+•import csv
