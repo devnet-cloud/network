@@ -1,0 +1,10 @@
+Access Different APIs firts
+
+REST APIs –requests
+•pip install requestsimport requests 
+
+NETCONF –ncclient 
+•pip install ncclientimport ncclient
+
+Network CLI –netmiko 
+•pip install netmikoimport netmiko
