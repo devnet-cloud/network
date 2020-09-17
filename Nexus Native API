@@ -2,7 +2,6 @@ Programability is at the heart of OPEN nx-os
 
 Working with nxapi on nexus platform
 
-
 1.- You need to enable nx-api feature
   Command: feature nxapi
   Command: feature bash ==> if you want to work with bash interface inside nexus
