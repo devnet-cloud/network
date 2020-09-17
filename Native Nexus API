@@ -1,0 +1,69 @@
+Programability is at the heart of OPEN nx-os
+
+Working with nxapi on nexus platform
+
+
+1.- You need to enable nx-api feature
+  Command: feature nxapi
+  Command: feature bash ==> if you want to work with bash interface inside nexus
+
+2.- We will have two differents frameworks
+
+  2.1.- NX-API CLI
+        - JSON-RPC (message format)
+            - NOT a REST API
+            - But can run over HTTP
+            - Defines the REQUEST and RESPONSE format only
+            - Command Type: CLI vs CLI_ascii
+                  - CLI: ======================================> Prefert this one
+                      - Structured data format 
+                      - Simple to write code againt
+                      
+                  - CLI_ascii:
+                      - Same output from cli command 
+                      - Only good  if re-using screen scraping scripts            
+            
+        - INS-API (XML / JSON) (Message Format) 
+            - Alternative CLI based API (specific to cisco)
+            - More full features and more capabilities
+            - Provides distinct show and config methods 
+            - Support for sending bash commands 
+            - Choice XML or JSON
+            - Better error messages
+            - Config Mode: cli_conf
+                  - For sending configuration 
+                  - Show commands work too
+            - Bash Shell
+                  - Sending bash commands 
+                  - Requiere feature bash 
+                 
+  2.2.- NX-API REST (full REST access)
+        - DME (Data Management Engine)
+        - Management Information Tree
+        
+        
+3.-NX-API Developper Sandbox (Is a web page hosted on every nx-os device) 
+      - Enable along with NX-API
+      - Web page hosted on box
+      - Constructs API Calls from CLIs
+      - Python script templates 
+      - Best for NX-API CLI
+      
+4.- Developer Sandbox with POSTMAN
+Note: NX-API CLI operates over HTTP BUT it is NOT REST
+    - URL to target: htpps://device/ins
+    - Header to use:
+        - Content type: applicatyion/json-rpc
+        - Content type: application/json 
+        - Content type: application/xml 
+    - Method: POST
+    - Authentication:
+        - Basic
+        - Cookies
+        
+5.- NX-API CLI Authentication and Cookies
+    - Most web clients automatically maintein sessions cookies
+    - Basic Authorization not required 
+    - Use of authorization cookies recommended to reduce load on switch 
+   
+      
