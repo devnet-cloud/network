@@ -1,1 +1,58 @@
+Programability is at the heart of OPEN NX-OS
 
+NX-API REST leave CLI behind:
+  - everything in NX-OS is an OBJECT
+  - Each Object have properties and methods 
+  - It is much more powerful
+  - More powerful that NX-API CLI but with steeper learning curve. 
+
+Data Management Engine:
+  - Northbound 
+      - NX-API REST
+      - CLI
+      - json-rpc
+      - Etc
+   - Southbound
+       - NX-OS Processes
+
+Management Information Tree: 
+    - Object Class identify its type
+    - Parent/Child relationships between object (1 parent many childrend)
+    - Assembled, create the MIT
+    - Everything build from "root" 
+    
+OBJECTS:
+    - Object have two names: 
+          - Relative name (RN)
+              - Unique inside a parent object
+          - Distinguished name (DN)
+              - Unique identification inside MIT
+              
+Samples: 
+- Object: System
+    - RN:sys
+    - DN:sys
+- Object: Interface list
+    - RN:intf
+    - DN:sys/intf
+    - Class: Interface entity
+- Object: Physical Interface
+    - RN: phys-[eth1/1]
+    - DN: sys/intf/phys-[eth1/1]
+    - Class: L1PhysIf
+
+NX-API REST with VISORE viewer
+- Enabled with nxapi
+- https://hardware/visore.html
+- Navigate the object model
+- Expose NX-API REST Calls
+
+NX-API REST URI Construction
+
+https://Device/api/<QUERY TYPE>/<IDENTIFIER>.<FORMAT>[?<QUERY PARAMS>]
+
+Working with nxapi on nexus platform
+
+1.- You need to enable nx-api feature
+  Command: feature nxapi
+  Command: feature bash ==> if you want to work with bash interface inside nexus
