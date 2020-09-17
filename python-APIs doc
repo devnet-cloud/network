@@ -1,4 +1,4 @@
-Access Different APIs first: 
+Install differents libraries first: 
 
 REST APIs –requests
 •pip install requests import requests 
