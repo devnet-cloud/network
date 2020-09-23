@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 """Sample of Get Interface
+Using Basic Authentication
 """
 
 # Import libraries
