@@ -1,8 +1,5 @@
 #! /usr/bin/env python
 """
-Learning Series: Network Programmability Basics
-Author: Hank Preston <hapresto@cisco.com>
-
 device_info.py
 Illustrate the following concepts:
 - Store device info for Sandbox Infrastructure used 
@@ -40,7 +37,6 @@ ios_xe2 = {
              "username": "developer",
              "password": "C1sco12345"
           }
-
 
 # DevNet Always-On Sandbox APIC-EM
 # https://devnetsandbox.cisco.com/RM/Diagram/Index/2e0f9525-5f46-4f46-973e-0f0c1bf934fa?diagramType=Topology
