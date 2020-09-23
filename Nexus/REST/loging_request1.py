@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-"""Sample of Get Interface
+"""Sample of Logging Request
 """
 
 # Import libraries
