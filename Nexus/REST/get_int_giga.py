@@ -14,7 +14,7 @@ USER = 'developer'
 PASS = 'C1sco12345'
 
 # URL for GET request
-url= "https://ios-xe-mgmt.cisco.com:9443/restconf/data/ietf-interfaces:interfaces"
+url= "https://ios-xe-mgmt.cisco.com:9443/restconf/data/interfaces/interface=GigabitEthernet1"
 
 # Set yang+jsonas the data formats
 headers = {'Content-Type': 'application/yang-data+json',
