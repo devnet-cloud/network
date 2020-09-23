@@ -1,3 +1,9 @@
+Working with nxapi on nexus platform
+
+1.- You need to enable nx-api feature
+  Command: feature nxapi
+  Command: feature bash ==> if you want to work with bash interface inside nexus
+
 Programability is at the heart of OPEN NX-OS
 
 NX-API REST leave CLI behind:
@@ -7,6 +13,9 @@ NX-API REST leave CLI behind:
   - More powerful that NX-API CLI but with steeper learning curve. 
 
 Data Management Engine:
+  - Provides API Acces to Management Information Tree.
+    Note: Then interface with the NX-OS processes
+    
   - Northbound 
       - NX-API REST
       - CLI
@@ -27,8 +36,7 @@ OBJECTS:
               - Unique inside a parent object
           - Distinguished name (DN)
               - Unique identification inside MIT
-              
-Samples: 
+Examples: 
 - Object: System
     - RN:sys
     - DN:sys
@@ -40,6 +48,10 @@ Samples:
     - RN: phys-[eth1/1]
     - DN: sys/intf/phys-[eth1/1]
     - Class: L1PhysIf
+    
+Note: https://developer.cisco.com/site/nxapi-dme-model-reference-api/
+The Nexus Model Reference is a resource to help you browse data models to understand the purpose of each model, 
+how to access it, and the type of data contained in it. 
 
 NX-API REST with VISORE viewer
 - Enabled with nxapi
@@ -47,12 +59,16 @@ NX-API REST with VISORE viewer
 - Navigate the object model
 - Expose NX-API REST Calls
 
+ Class based search: Is a particular type of object
+  - Class for interfaces
+  - Class for Vlans
+    Ex: l2BD. 
+  - Class for VRFs
+
 NX-API REST URI Construction
 
 https://Device/api/<QUERY TYPE>/<IDENTIFIER>.<FORMAT>[?<QUERY PARAMS>]
 
-Working with nxapi on nexus platform
 
-1.- You need to enable nx-api feature
-  Command: feature nxapi
-  Command: feature bash ==> if you want to work with bash interface inside nexus
+
+
