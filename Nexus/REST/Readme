@@ -1,7 +1,7 @@
 Programability is at the heart of OPEN NX-OS
 
 NX-API REST leave CLI behind:
-  - everything in NX-OS is an OBJECT
+  - Everything in NX-OS is an OBJECT
   - Each Object have properties and methods 
   - It is much more powerful
   - More powerful that NX-API CLI but with steeper learning curve. 
